@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_one"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/image_two"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/textCategory"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Likes"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/textLikes"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Likes"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
+
+</LinearLayout>

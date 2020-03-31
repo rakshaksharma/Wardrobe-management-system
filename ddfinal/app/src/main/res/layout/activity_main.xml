@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:background="#303030"
+        android:id="@+id/button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:id="@+id/resize_upper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Resize Upper"
+            android:layout_weight="1.5">
+
+        </Button>
+
+
+        <Button
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:id="@+id/move_upper"
+            android:text="Move upper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+        </Button>
+
+        <Button
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:id="@+id/avatar"
+            android:text="Avatar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </Button>
+
+        <Button
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:text="Add"
+            android:id="@+id/add"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            ></Button>
+
+        <Spinner
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:id="@+id/category"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_height="40dp">
+        </Spinner>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#303030"
+        android:id="@+id/button_holder2"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/resize_lower"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:text="Resize Lower"
+            android:textColor="#ffffff"
+            android:textSize="10sp">
+
+        </Button>
+
+
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/move_lower"
+            android:text="Move Lower"
+            android:textSize="10sp"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/flip"
+            android:textSize="10sp"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Flip"></Button>
+
+
+
+        <Button
+            android:id="@+id/fav"
+            android:textSize="10sp"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="#ffffff"
+            android:layout_height="match_parent"
+            android:text="Fav"></Button>
+
+        <Button
+            android:text="Share"
+            android:id="@+id/share"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:background="#303030"
+            android:fontFamily="@font/yantramanav"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            ></Button>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/avatar_imageview"
+        android:background="#000000"
+        android:layout_below="@id/button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_holder2"
+        >
+
+    </ImageView>
+
+
+
+
+    <ImageView
+        android:layout_margin="30dp"
+        android:src="@drawable/one"
+        android:id="@+id/upper"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/button_holder">
+
+    </ImageView>
+
+    <ImageView
+        android:src="@drawable/two"
+        android:id="@+id/lower"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/upper">
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/fav_list"
+        android:background="@mipmap/fav_list"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_height="50dp">
+
+    </Button>
+
+
+</RelativeLayout>
